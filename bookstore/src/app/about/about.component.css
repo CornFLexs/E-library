@@ -1,0 +1,68 @@
+.container {
+    background-color: white;
+    width: 1700px;
+    height: 900px;
+    overflow-y: scroll;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.container {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.aboutdetails {
+    font-size: 30px;
+    font-family: font2;
+    color: black;
+    padding: 10px 30px 10px 50px;
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../../app/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.images1 {
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 20%;
+}
+
+.images2 {
+    width: 500px;
+    height: 400px;
+    border-radius: 20%;
+    float: right;
+}
+
+.pop-in {
+    animation-name: pop-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

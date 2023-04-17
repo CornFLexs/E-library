@@ -1,0 +1,26 @@
+<div class="container">
+    <ul class="pop-in-delay">
+        <li *ngFor="let book of books">
+            <div class="card">
+                <figure>
+                    <img src="{{book.url}}" alt="book">
+                </figure>
+                <section class="details">
+                    <div class="min-details">
+                        <h1>{{book.bookname}} <span>{{book.author}}</span></h1>
+                    </div>
+
+                    <div class="options">
+                        <div class="options-size">
+                            <h1>Genres</h1>
+                            <ul>
+                                <li>{{book.genre}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Read</a>
+                </section>
+            </div>
+        </li>
+    </ul>
+</div>

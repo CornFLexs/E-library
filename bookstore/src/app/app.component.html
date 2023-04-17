@@ -1,0 +1,27 @@
+<nav class="navbar" [ngClass]="{'navbar--open': isOpen}">
+    <div class="menu">
+        <ul class="navbar__menu">
+            <li><a routerLink="home" (click)="toggleNavbar()">Home</a></li>
+            <li><a routerLink="library" (click)="toggleNavbar()">Library</a></li>
+            <li><a routerLink="about" (click)="toggleNavbar()">About</a></li>
+
+        </ul>
+        <div class="slogo slogo--bottom">
+            <a href="#"><img src="assets/images/socials/facebook.png" class="socials"></a>
+            <a href="#"><img src="assets/images/socials/instagram.png" class="socials"></a>
+            <a href="#"><img src="assets/images/socials/twitter.png" class="socials"></a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="menu-toggle-container">
+    <button class="menu-toggle" [ngClass]="{'active': isOpen}" (click)="toggleNavbar()">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+</div>
+
+
+<router-outlet></router-outlet>
